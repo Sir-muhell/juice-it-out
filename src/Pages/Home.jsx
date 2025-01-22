@@ -220,7 +220,7 @@ const Home = () => {
           </div>
           <div className="lg:grid grid-cols-2 gap-12">
             <img
-              src={Image}
+              src={Image3}
               alt="Book Mock-up"
               className="w-full mt-10 lg:h-96 h-56 object-cover rounded-3xl "
             />
@@ -279,7 +279,9 @@ const Home = () => {
               <div
                 key={index}
                 style={{ backgroundColor: feature.color }}
-                className="p-5 rounded-xl"
+                className={`p-5 rounded-xl ${
+                  index === features.length - 1 ? "col-span-full" : ""
+                }`}
               >
                 <img src={feature.image} className="w-8 h-8" />
                 <p className="mt-2 font-bold text-xl leading-6">
