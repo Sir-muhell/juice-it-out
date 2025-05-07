@@ -89,3 +89,19 @@ body {
     line-height: 28px;
   }
 }
+
+.custom-wrap img {
+  shape-outside: margin-box;
+  float: left;
+  max-height: 100%;
+}
+
+@media (max-width: 768px) {
+  .custom-wrap img {
+    float: none;
+    shape-outside: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 100%;
+  }
+}
