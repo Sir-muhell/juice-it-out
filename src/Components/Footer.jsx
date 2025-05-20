@@ -1,19 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="p-7 ">
       <div className="bg-[#6456CA] px-5 sm:px-10 lg:px-20 py-5 lg:py-10 rounded-2xl border-black border-[2px]">
-        <div className="lg:flex justify-between border-b border-white pb-10">
+        <div className="lg:flex justify-between md:border-b border-white pb-10">
           <div>
-            <p className="font-bold lg:text-[42px] text-2xl leading-[48px] text-white">
+            <Link
+              to="/"
+              className="font-bold lg:text-[42px] text-2xl leading-[48px] text-white"
+            >
               JuiceItOut
-            </p>
-            <div className="flex space-x-10 text-white text-base font-bold lg:mt-7 mt-3">
-              <p>Home</p>
-              <p>About</p>
+            </Link>
+            <div className="flex md:space-x-10 justify-between text-white md:text-base text-xs font-bold lg:mt-7 mt-3 md:border-none border-b border-white pb-10 md:pb-0">
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
               <p>Order</p>
-              <p>Contact</p>
+              <Link to="/products">Products</Link>
+              <Link to="/contact">Contact</Link>
             </div>
           </div>
           <div className="mt-5 lg:mt-0">
@@ -32,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 lg:flex justify-between text-white">
+        <div className="mt-10 lg:flex md:flex justify-between text-white">
           <p className=" lg:text-base text-[14px] font-bold text-center">
             2025 Juice It Out. All rights reserved
           </p>

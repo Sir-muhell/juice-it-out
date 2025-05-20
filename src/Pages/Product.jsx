@@ -65,7 +65,7 @@ const Product = () => {
               impactful realities.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-10 mt-14">
+          <div className="md:grid grid-cols-2 gap-10 mt-14 space-y-10">
             <div className="bg-[#FFCF57] rounded-[35px] p-12 border-black border-[4px] flex items-center justify-center">
               <img src={BookTwo} alt="joi-book" />
             </div>
@@ -97,10 +97,15 @@ const Product = () => {
                 and prophecies into tools for intentional living.
               </p>
               <div className="space-x-5">
-                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
-                  Learn More
-                </button>
-                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-transparent text-black rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
+                <a href="/products/echoes-and-light">
+                  <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
+                    Learn More
+                  </button>
+                </a>
+                <button
+                  disabled
+                  className=" bg-transparent text-black rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8"
+                >
                   Coming Soon
                 </button>
               </div>
@@ -117,10 +122,15 @@ const Product = () => {
                 you, the page, and whatever needs to be released.
               </p>
               <div className="space-x-5">
-                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
-                  Learn More
-                </button>
-                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-transparent text-black rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
+                <a href="/products/soul-dump">
+                  <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
+                    Learn More
+                  </button>
+                </a>
+                <button
+                  disabled
+                  className=" bg-transparent text-black rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8"
+                >
                   Coming Soon
                 </button>
               </div>
@@ -141,9 +151,11 @@ const Product = () => {
                 When you’re ready, bring those ideas to life with structure and
                 depth in your Juice It Out Ideas Journal.
               </p>
-              <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
-                Learn More
-              </button>
+              <a href="/products/pocket-buddy">
+                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
+                  Learn More
+                </button>
+              </a>
             </div>
           </div>
         </div>

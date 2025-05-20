@@ -8,10 +8,11 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Product from "./Pages/Product";
 import Ideas from "./Pages/Ideas";
+import Echoes from "./Pages/Echoes";
+import Soul from "./Pages/Soul";
+import Pocket from "./Pages/Pocket";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="App">
@@ -22,9 +23,12 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/products" element={<Product />} />
             <Route path="/products/ideas-journal" element={<Ideas />} />
+            <Route path="/products/echoes-and-light" element={<Echoes />} />
+            <Route path="/products/soul-dump" element={<Soul />} />
+            <Route path="/products/pocket-buddy" element={<Pocket />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
-        <Footer />
       </div>
     </>
   );

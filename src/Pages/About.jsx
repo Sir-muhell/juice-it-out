@@ -17,7 +17,7 @@ const About = () => {
         <div className="relative lg:p-10 p-10 lg:px-64 pt-5 lg:pt-20">
           <div className="z-20">
             <Header />
-            <div className="bg-[#E87721] grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative">
+            <div className="bg-[#E87721] grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative overflow-hidden">
               <div>
                 <img
                   src={HeroImage}
@@ -57,7 +57,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-11 mt-10 gap-10">
+        <div className="md:grid grid-cols-11 mt-10 gap-10">
           <div className="col-span-5">
             <p className="head">Our Mission</p>
             <p className="subhead mt-5">
@@ -66,7 +66,7 @@ const About = () => {
               and professional growth.
             </p>
           </div>
-          <div className="col-span-6 bg-[#FFCF57] rounded-[10px] h-[256px] border-black border-[3px]  overflow-hidden flex items-center justify-center max-h-[256px]">
+          <div className="col-span-6 bg-[#FFCF57] rounded-[10px] h-[256px] border-black border-[3px]  overflow-hidden flex items-center justify-center max-h-[256px] mt-10">
             <img
               src={BookTwo}
               alt="Book Mock-up"
@@ -74,7 +74,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-10 mt-20 gap-10">
+        <div className="md:grid grid-cols-10 mt-20 gap-10 space-y-10">
           <div className="col-span-5">
             <p className="head">Our Approach</p>
             <p className="subhead mt-5">
@@ -124,15 +124,20 @@ const About = () => {
             className=" object-cover h-[120%] mt-40 "
           />
         </div>
-        <div className="relative">
+        <div className="relative w-full">
           <div className="max-w-5xl mx-auto pt-20">
             <div className="custom-wrap relative">
+              <p className="head block md:hidden mb-5">
+                The Creator behind The Juice It Out Brand.
+              </p>
               <img
                 src={Person}
                 alt="Floating Image"
-                className="float-left mr-10 mb-4 w-[40%] max-w-[300px] rounded-xl object-cover"
+                className="float-left mr-10 mb-4 md:w-[40%] md:max-w-[300px] w-full rounded-xl object-cover"
               />
-              <p className="head">The Creator behind The Juice It Out Brand.</p>
+              <p className="head md:block hidden">
+                The Creator behind The Juice It Out Brand.
+              </p>
               <p className="subhead mt-5">
                 I’m Olamide Femi-Onafadeji. I’m quite intrigued that you want to
                 know about me—and I’m also delighted to meet you.

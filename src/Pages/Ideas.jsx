@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
 import HeroImage from "../assets/ideas.webp";
-import Book from "../assets/book-4.webp";
 import BookTwo from "../assets/book-1.webp";
 import IconLemon from "../assets/icons/lemon-box.svg";
 import IconRed from "../assets/icons/red-box.svg";
@@ -70,7 +69,7 @@ const Ideas = () => {
               move.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-10 mt-14">
+          <div className="md:grid grid-cols-2 gap-10 mt-14 space-y-10">
             <div className="bg-[#17B882] rounded-[35px] p-12 border-black border-[4px] flex items-center justify-center">
               <img src={BookTwo} alt="joi-book" />
             </div>

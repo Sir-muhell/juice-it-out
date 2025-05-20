@@ -5,6 +5,7 @@ import HeroTape from "../assets/hero-tape.webp";
 import BookOne from "../assets/book-1.webp";
 import BookTwo from "../assets/book-2.webp";
 import BookThree from "../assets/book-3.webp";
+import BookFour from "../assets/book-4.webp";
 
 // Icons
 import IconRed from "../assets/icons/red-round.svg";
@@ -21,10 +22,10 @@ import Button from "../Components/Button";
 import ArrowUp from "../assets/icons/arrow-up.png";
 import ArrowDown from "../assets/icons/arrow-down.png";
 import Testimonials from "../Components/Testimonial";
-import Image from "../assets/mockup.png";
-import Image2 from "../assets/mockup-2.png";
+import Image from "../assets/mockup.webp";
+
 import Image3 from "../assets/mockup-3.jpg";
-import Video from "../assets/banner.mp4";
+
 import Potential from "../Components/Potential";
 import Header from "../Components/Header";
 
@@ -110,17 +111,17 @@ const Home = () => {
   return (
     <div className="font-dm ">
       <div className="relative bg-hero-image bg-cover">
-        <div className="relative lg:p-10 p-10 lg:px-64 pt-5 lg:pt-20">
+        <div className="relative p-10 lg:px-64 pt-5 lg:pt-20">
           <div className="z-20">
             <Header />
           </div>
 
           <div className=" text-center mt-10">
-            <p className="text-xl font-medium text-black mb-10">
+            <p className="text-xl font-medium text-black mb-10 lg:block hidden">
               Light your Spark
             </p>
             <img src={HeroText} alt="hero-text" className="w-[530px] m-auto" />
-            <p className="text-xl font-medium mt-5 text-igrey m-auto w-1/2">
+            <p className="lg:text-xl text-base font-medium mt-5 text-igrey m-auto lg:w-1/2 capitalize">
               Your journal, your masterpiece. Lightweight, powerful, and ready
               to bring your vision to life.
             </p>
@@ -128,8 +129,13 @@ const Home = () => {
               <img
                 src={HeroImage}
                 alt="hero-image"
-                className="w-[577px] mb-20"
+                className="w-[577px] mb-20 hidden"
               />
+              {/* <img
+                src={BookFour}
+                alt="hero-image"
+                className="bottom-0 absolute"
+              /> */}
 
               <img
                 src={IconRed}
@@ -176,7 +182,7 @@ const Home = () => {
           </div>
           {/* <div className="bg-[#E8F4FF] h-96 mt-10 rounded-3xl"></div> */}
 
-          <div class="grid grid-cols-2 gap-4 mt-10 relative z-10">
+          <div class="lg:grid grid-cols-2 gap-4 mt-10 relative z-10 space-y-5 lg:spacce-y-0">
             <div className="bg-[#FFCF57] rounded-[10px] border-black border border-[3px] px-5 py-10">
               <img
                 src={BookOne}
@@ -184,7 +190,7 @@ const Home = () => {
                 className="w-full  object-cover rounded-3xl m-auto"
               />
             </div>
-            <div className="space-y-5">
+            <div className="space-y-5 flex flex-col">
               <div className="row-span-3 bg-[#E87721] rounded-[10px] h-[256px] border-black border-[3px]  overflow-hidden flex items-center justify-center max-h-[256px]">
                 <img
                   src={BookTwo}
@@ -193,7 +199,7 @@ const Home = () => {
                 />
               </div>
 
-              <div className="row-span-3 bg-[#FFA0CA] rounded-[10px] h-[192px] border-black border-[3px]  overflow-hidden flex items-center justify-center">
+              <div className="row-span-3 bg-[#FFA0CA] rounded-[10px] h-[192px] grow border-black border-[3px]  overflow-hidden flex items-center justify-center">
                 <img
                   src={BookThree}
                   alt="Book Mock-up"
@@ -208,7 +214,7 @@ const Home = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="grid grid-cols-2 gap-10">
+          <div className="md:grid grid-cols-2 gap-10 space-y-10">
             <div>
               <p className="prehead">Sleek. Powerful. Transformational.</p>
               <p className="head">
@@ -287,7 +293,7 @@ const Home = () => {
           <img
             src={Image}
             alt="Book Mock-up"
-            className="w-full mt-10 lg:h-96 h-56 object-cover rounded-3xl "
+            className="w-full mt-10 lg:h-96 h-56 object-cover rounded-3xl border-black border-[2px] rounded-[40px]"
           />
           <div className="overflow-hidden">
             <img
@@ -305,7 +311,7 @@ const Home = () => {
             </p>
             <p className="head">Get To Know Your Journal</p>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-5 lg:gap-x-3 gap-x-3 lg:gap-y-3 gap-y-3 mt-12 relative z-10">
+          <div className="lg:grid grid-cols-2 lg:grid-cols-5 lg:gap-x-3 gap-x-3 lg:space-y-3 space-y-3 mt-12 relative z-10 ">
             {features.map((feature, index) => {
               const isLast = index === features.length - 1;
 
@@ -338,7 +344,7 @@ const Home = () => {
             })}
             <div
               style={{ backgroundColor: "#FFC5B8" }}
-              className="rounded-xl border-black border-[2px] w-full col-span-5 grid grid-cols-5 overflow-hidden max-h-[255px]"
+              className="rounded-xl border-black border-[2px] w-full col-span-5 lg:grid grid-cols-5 overflow-hidden max-h-[255px]"
             >
               {/* Text content with padding */}
               <div className="col-span-3 p-7">
@@ -354,7 +360,7 @@ const Home = () => {
               </div>
 
               {/* Image without padding */}
-              <div className="col-span-2 flex items-center justify-center overflow-hidden max-h-full relative">
+              <div className="col-span-2 flex items-center justify-center overflow-hidden max-h-full relative hidden lg:block">
                 <img
                   src={BookTwo}
                   alt="icon-red"

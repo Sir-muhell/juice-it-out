@@ -54,7 +54,7 @@ const Contact = () => {
               Drop us a line — we promise it won’t get lost in the noise
               (because clarity is kind of our thing 😉)
             </p>
-            <div className="grid grid-cols-2 mt-10 gap-5">
+            <div className="md:grid grid-cols-2 mt-10 gap-5">
               <div className="space-y-5">
                 <input
                   type="text"
@@ -75,21 +75,28 @@ const Contact = () => {
               <textarea
                 type="text"
                 placeholder="Type you message here..."
-                className="block w-full rounded-[9px] py-3 px-5 bg-transparent text-black ring-2 ring-black placeholder:text-gray focus:ring-0 focus:ring-0"
+                className="block w-full rounded-[9px] py-3 px-5 bg-transparent text-black ring-2 ring-black placeholder:text-gray focus:ring-0 focus:ring-0 mt-5 md:mt-0"
               />
 
-              <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-4 text-black text-base border-black border-2 w-fit">
-                Pre-order Now
+              <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-4 text-black text-base border-black border-2 md:w-fit w-full mt-5 md:mt-0">
+                Send Message
               </button>
             </div>
           </div>
         </div>
-        <div className="justify-between flex text-xl font-medium mt-16 -mb-10">
+        <div className="justify-between flex text-xl font-medium mt-16 ">
           <a href="mailto:community@juiceitout.com">
             Email: community@juiceitout.com
           </a>
-          <p>Instagram: @juiceitout1</p>
-          <p>Facebook: Juice It Out</p>
+          <a href="https://instagram.com/juiceitout1/" target="_blank">
+            Instagram: @juiceitout1
+          </a>
+          <a
+            href="https://facebook.com/profile.php?id=61572443378802"
+            target="_blank"
+          >
+            Facebook: Juice It Out
+          </a>
         </div>
         <img
           src={IconBlue}
