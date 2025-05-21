@@ -11,17 +11,17 @@ const Ideas = () => {
   return (
     <div className="font-dm ">
       <div className="relative  bg-cover">
-        <div className="relative lg:p-10 p-10 lg:px-64 pt-5 lg:pt-20">
+        <div className="relative md:p-10 p-5 lg:px-64 pt-5 lg:pt-20">
           <div className="z-20">
             <Header />
-            <div className="bg-[#FFCF57] grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative">
+            <div className="bg-[#FFCF57] md:grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative">
               <div>
                 <img
                   src={HeroImage}
                   alt="Hero-text"
-                  className="w-[320px] pt-24 pl-20"
+                  className="md:w-[320px] w-[261px] md:pt-24 md:pl-20 md:m-0 m-auto pt-10"
                 />
-                <p className="text-xl font-medium pl-20 mt-5">
+                <p className="md:text-xl text-base md:text-left text-center font-medium md:pl-20 mt-5">
                   From Scattered Thoughts <br />
                   To Structured Brilliance.
                 </p>
@@ -32,7 +32,7 @@ const Ideas = () => {
               <img
                 src={IconLemon}
                 alt="icon-purple"
-                className="w-[112px] absolute bottom-10 -right-14 z-10"
+                className="md:w-[112px] w-8 absolute bottom-10 -right-14 z-10"
               />
             </div>
           </div>
@@ -48,12 +48,12 @@ const Ideas = () => {
           <img
             src={IconBlue}
             alt="icon-blue"
-            className="w-[112px] absolute top-[700px] -left-80"
+            className="md:w-[112px] w-8 absolute top-[700px] -left-80"
           />
           <img
             src={IconRed}
             alt="icon-red"
-            className="w-[112px] absolute bottom-16 -right-72"
+            className="md:w-[112px] w-8 absolute bottom-16 -right-72"
           />
           <div>
             <p className="head">JIO- Ideas Journal</p>

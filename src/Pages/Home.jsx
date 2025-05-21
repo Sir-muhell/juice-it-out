@@ -109,43 +109,47 @@ const Home = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="font-dm ">
-      <div className="relative bg-hero-image bg-cover">
-        <div className="relative p-10 lg:px-64 pt-5 lg:pt-20">
+    <div className="font-dm relative">
+      <div className="relative bg-hero-image bg-cover bg-center">
+        <div className="relative p-10 md:pb-10 pb-3 lg:px-64 pt-5 lg:pt-20">
           <div className="z-20">
             <Header />
           </div>
 
-          <div className=" text-center mt-10">
+          <div className=" text-center mt-10 z-10 overflow-hidden">
             <p className="text-xl font-medium text-black mb-10 lg:block hidden">
               Light your Spark
             </p>
-            <img src={HeroText} alt="hero-text" className="w-[530px] m-auto" />
-            <p className="lg:text-xl text-base font-medium mt-5 text-igrey m-auto lg:w-1/2 capitalize">
+            <img
+              src={HeroText}
+              alt="hero-text"
+              className="md:w-[530px] w-[220px] m-auto"
+            />
+            <p className="lg:text-xl text-base font-medium mt-5 text-igrey m-auto md:w-1/2 w-[70%] capitalize">
               Your journal, your masterpiece. Lightweight, powerful, and ready
               to bring your vision to life.
             </p>
             <div className="relative w-fit m-auto mt-5">
-              <img
+              {/* <img
                 src={HeroImage}
                 alt="hero-image"
                 className="w-[577px] mb-20 hidden"
-              />
-              {/* <img
+              /> */}
+              <img
                 src={BookFour}
                 alt="hero-image"
-                className="bottom-0 absolute"
-              /> */}
+                className="md:w-[577px] w-[70%] m-auto md:-mb-80 -mb-24 "
+              />
 
               <img
                 src={IconRed}
                 alt="icon-red"
-                className="w-[112px] absolute top-10 -right-10"
+                className="md:w-[112px] w-8 absolute top-10 right-10"
               />
               <img
                 src={IconPurple}
                 alt="icon-purple"
-                className="w-[112px] absolute bottom-5 -left-10"
+                className="md:w-[112px] w-8 absolute top-32 left-10"
               />
             </div>
           </div>
@@ -158,22 +162,22 @@ const Home = () => {
         />
       </div>
 
-      <div className="p-5 sm:p-10 lg:p-64 lg:pt-20 space-y-32 lg:pb-20 overflow-hidden">
+      <div className="p-5 sm:p-10 lg:p-64 lg:pt-20 space-y-32 lg:pb-20 overflow-hidden ">
         <div className="relative">
           <img
             src={IconLemon2}
             alt="icon-purple"
-            className="w-[112px] absolute top-10 -right-10"
+            className="md:w-[112px] w-8 absolute top-10 md:-right-10 right-0"
           />
           <img
             src={IconBlue}
             alt="icon-purple"
-            className="w-[112px] absolute bottom-24 -left-20"
+            className="md:w-[112px] w-8 absolute bottom-24 :md:-left-20 left-0"
           />
           <div>
             <p className="prehead">Where Ideas Take the Spotlight</p>
             <p className="head">Ideas Rule the World. Let Yours Lead.</p>
-            <p className="subhead mt-5 w-[80%]">
+            <p className="subhead mt-5 md:w-[80%]">
               You’ve had that spark, that one moment of inspiration. But where
               does it go? With the Juice It Out Journal, you can capture,
               refine, and execute your ideas with precision. This isn’t just a
@@ -182,7 +186,7 @@ const Home = () => {
           </div>
           {/* <div className="bg-[#E8F4FF] h-96 mt-10 rounded-3xl"></div> */}
 
-          <div class="lg:grid grid-cols-2 gap-4 mt-10 relative z-10 space-y-5 lg:spacce-y-0">
+          <div className="lg:grid grid-cols-2 gap-4 mt-10 relative z-10 space-y-5 lg:space-y-0">
             <div className="bg-[#FFCF57] rounded-[10px] border-black border border-[3px] px-5 py-10">
               <img
                 src={BookOne}
@@ -246,12 +250,12 @@ const Home = () => {
           <img
             src={IconYellow}
             alt="icon-purple"
-            className="w-[112px] absolute -left-32"
+            className="md:w-[112px] w-8 absolute -left-32"
           />
           <img
             src={IconLemon}
             alt="icon-purple"
-            className="w-[112px] absolute -bottom-10 -right-32"
+            className="md:w-[112px] w-8 absolute -bottom-10 -right-32"
           />
 
           <div className="row-span-3 bg-[#FE572A] rounded-[10px] h-[419px] border-black border-[3px]  overflow-hidden flex items-center justify-center mt-16">
@@ -299,7 +303,7 @@ const Home = () => {
             <img
               src={IconPurpleTwo}
               alt="icon-red"
-              className="w-[112px] absolute top-10 -right-80 "
+              className="md:w-[112px] w-8 absolute top-10 -right-80 "
             />
           </div>
         </div>
@@ -373,7 +377,7 @@ const Home = () => {
           <img
             src={IconLemon}
             alt="icon-red"
-            className="w-[112px] absolute top-72 -left-20"
+            className="md:w-[112px] w-8 absolute top-72 -left-20"
           />
 
           <div className="mt-12 text-center">
@@ -402,7 +406,7 @@ const Home = () => {
             <img
               src={IconOrange}
               alt="icon-red"
-              className="w-[112px] absolute -bottom-10 -right-10"
+              className="md:w-[112px] w-8 absolute -bottom-10 -right-10"
             />
           </div>
         </div>

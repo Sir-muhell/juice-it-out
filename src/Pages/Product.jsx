@@ -13,27 +13,32 @@ const Product = () => {
   return (
     <div className="font-dm ">
       <div className="relative  bg-cover">
-        <div className="relative lg:p-10 p-10 lg:px-64 pt-5 lg:pt-20">
+        <div className="relative md:p-10 p-5 lg:px-64 pt-5 lg:pt-20">
           <div className="z-20">
             <Header />
-            <div className="bg-[#E87721] grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative">
+            <div className="bg-[#E87721] md:grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative overflow-hidden">
               <div>
                 <img
                   src={HeroImage}
                   alt="Hero-text"
-                  className="w-[320px] pt-24 pl-20"
+                  className="md:w-[320px] w-[261px] md:pt-24 md:pl-20 md:m-0 m-auto pt-10"
                 />
-                <p className="text-xl font-medium pl-20 mt-5">
-                  We’ve got a journal for <br /> everything
+                <p className="md:text-xl text-base md:text-left text-center font-medium md:pl-20 mt-5">
+                  We’ve got a journal for <br className="md:block hidden" />{" "}
+                  everything
                 </p>
               </div>
               <div className="flex items-center justify-center overflow-hidden">
-                <img src={Book} alt="" className=" pr-16 pb-16" />
+                <img
+                  src={Book}
+                  alt=""
+                  className=" md:pr-16 md:pb-16 md:px-0 px-10 md:mt-0 mt-5"
+                />
               </div>
               <img
                 src={IconYellow}
                 alt="icon-purple"
-                className="w-[112px] absolute bottom-40 -right-14 z-10"
+                className="md:w-[112px] w-8 absolute bottom-40 -right-14 z-10"
               />
             </div>
           </div>
@@ -49,12 +54,12 @@ const Product = () => {
           <img
             src={IconBlue}
             alt="icon-purple"
-            className="w-[112px] absolute top-[700px] -left-80"
+            className="md:w-[112px] w-8 absolute top-[700px] -left-80"
           />
           <img
             src={IconLemon}
             alt="icon-purple"
-            className="w-[112px] absolute bottom-96 -right-72"
+            className="md:w-[112px] w-8 absolute bottom-96 -right-72"
           />
           <div>
             <p className="head">Empowering Your Ideas to Thrive</p>

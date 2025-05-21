@@ -31,7 +31,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="block w-full rounded-[9px] py-3 px-5 bg-transparent text-white ring-1 ring-white placeholder:text-white focus:ring-0 focus:ring-0"
               />
-              <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-[#FE572A] text-black rounded-[14px] border-0 p-3 text-black text-xl w-full lg:w-52 border-black border-[2px] ">
+              <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-[#FE572A] text-black rounded-[14px] border-0 p-3 text-black px-8 text-xl lg:w-full lg:w-52 border-black border-[2px] ">
                 Subscribe
               </button>
             </div>

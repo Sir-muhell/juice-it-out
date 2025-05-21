@@ -14,27 +14,31 @@ const About = () => {
   return (
     <div className="font-dm ">
       <div className="relative  bg-cover">
-        <div className="relative lg:p-10 p-10 lg:px-64 pt-5 lg:pt-20">
+        <div className="relative lg:p-10 p-5 lg:px-64 pt-5 lg:pt-20">
           <div className="z-20">
             <Header />
-            <div className="bg-[#E87721] grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative overflow-hidden">
+            <div className="bg-[#E87721] md:grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative overflow-hidden">
               <div>
                 <img
                   src={HeroImage}
                   alt="Hero-text"
-                  className="w-[320px] pt-24 pl-20"
+                  className="md:w-[320px] w-[239px] m-auto md:m-0 pt-10 md:pt-24 md:pl-20"
                 />
-                <p className="text-xl font-medium pl-20 mt-5">
-                  Empowering Your Ideas to Thrive
+                <p className="md:text-xl text-base font-medium md:pl-20 mt-5 text-center">
+                  Empowering Your Ideas To Thrive
                 </p>
               </div>
               <div className="flex items-center justify-center overflow-hidden">
-                <img src={Book} alt="" className=" pr-16 pb-16" />
+                <img
+                  src={Book}
+                  alt=""
+                  className=" md:pr-16 pb-16 md:px-0 px-10 md:mt-5 mt-3"
+                />
               </div>
               <img
                 src={IconYellow}
                 alt="icon-purple"
-                className="w-[112px] absolute bottom-5 -right-14 z-10"
+                className="md:w-[112px] w-8 absolute bottom-5 -right-14 z-10"
               />
             </div>
           </div>

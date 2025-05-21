@@ -31,7 +31,7 @@ const Soul = () => {
               <img
                 src={IconLemon}
                 alt="icon-purple"
-                className="w-[112px] absolute bottom-10 -right-14 z-10"
+                className="md:w-[112px] w-8 absolute bottom-10 -right-14 z-10"
               />
             </div>
           </div>
@@ -47,12 +47,12 @@ const Soul = () => {
           <img
             src={IconBlue}
             alt="icon-blue"
-            className="w-[112px] absolute top-[700px] -left-80"
+            className="md:w-[112px] w-8 absolute top-[700px] -left-80"
           />
           <img
             src={IconRed}
             alt="icon-red"
-            className="w-[112px] absolute bottom-16 -right-72"
+            className="md:w-[112px] w-8 absolute bottom-16 -right-72"
           />
           <div>
             <p className="head">JIO- The Soul dump</p>
