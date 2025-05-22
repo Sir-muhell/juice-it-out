@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import HeroImage from "../assets/about-text.webp";
+import HeroImageSm from "../assets/about-text-2.webp";
 import Book from "../assets/book-4.webp";
 import IconYellow from "../assets/icons/lemon-star.svg";
 import HeroTape from "../assets/hero-tape.webp";
@@ -22,7 +23,12 @@ const About = () => {
                 <img
                   src={HeroImage}
                   alt="Hero-text"
-                  className="md:w-[320px] w-[239px] m-auto md:m-0 pt-10 md:pt-24 md:pl-20"
+                  className="md:w-[320px] w-[239px] m-auto md:m-0 pt-10 md:pt-24 md:pl-20 hidden md:block"
+                />
+                <img
+                  src={HeroImageSm}
+                  alt="Hero-text"
+                  className=" w-[239px] m-auto pt-10 md:hidden "
                 />
                 <p className="md:text-xl text-base font-medium md:pl-20 mt-5 text-center">
                   Empowering Your Ideas To Thrive

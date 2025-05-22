@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import HeroImage from "../assets/browse.webp";
+import HeroImageSm from "../assets/browse-2.webp";
 import Book from "../assets/book-4.webp";
 import BookTwo from "../assets/book-1.webp";
 import BookThree from "../assets/book-2.webp";
@@ -21,10 +22,15 @@ const Product = () => {
                 <img
                   src={HeroImage}
                   alt="Hero-text"
-                  className="md:w-[320px] w-[261px] md:pt-24 md:pl-20 md:m-0 m-auto pt-10"
+                  className="md:w-[320px] w-[261px] md:pt-24 md:pl-20 md:m-0 m-auto pt-10 md:block hidden"
+                />
+                <img
+                  src={HeroImageSm}
+                  alt="Hero-text"
+                  className=" w-[261px] m-auto pt-10 md:hidden"
                 />
                 <p className="md:text-xl text-base md:text-left text-center font-medium md:pl-20 mt-5">
-                  We’ve got a journal for <br className="md:block hidden" />{" "}
+                  We’ve got a journal for <br className="md:block hidden" />
                   everything
                 </p>
               </div>
@@ -71,7 +77,7 @@ const Product = () => {
             </p>
           </div>
           <div className="md:grid grid-cols-2 gap-10 mt-14 space-y-10">
-            <div className="bg-[#FFCF57] rounded-[35px] p-12 border-black border-[4px] flex items-center justify-center">
+            <div className="bg-[#FFCF57] rounded-[35px] p-12 border-black border-[2px] flex items-center justify-center">
               <img src={BookTwo} alt="joi-book" />
             </div>
             <div>
@@ -83,12 +89,12 @@ const Product = () => {
                 impactful realities.
               </p>
               <a href="/products/ideas-journal">
-                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
+                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 md:p-3 p-2 px-7 text-black text-base border-black border-2 mt-8">
                   Learn More
                 </button>
               </a>
             </div>
-            <div className="bg-[#17B882] rounded-[35px] p-12 border-black border-[4px] flex items-center justify-center">
+            <div className="bg-[#17B882] rounded-[35px] p-12 border-black border-[2px] flex items-center justify-center">
               <img src={BookTwo} alt="joi-book" />
             </div>
             <div>
@@ -103,19 +109,19 @@ const Product = () => {
               </p>
               <div className="space-x-5">
                 <a href="/products/echoes-and-light">
-                  <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
+                  <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 md:p-3 p-2 px-7 text-black md:text-base text-[15px] border-black border-2 mt-8">
                     Learn More
                   </button>
                 </a>
                 <button
                   disabled
-                  className=" bg-transparent text-black rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8"
+                  className=" bg-transparent text-black rounded-[14px] border-0 md:p-3 p-2 px-7 text-black md:text-base text-[15px] border-black border-2 mt-8"
                 >
                   Coming Soon
                 </button>
               </div>
             </div>
-            <div className="bg-[#6456CA] rounded-[35px] p-12 border-black border-[4px] flex items-center justify-center">
+            <div className="bg-[#6456CA] rounded-[35px] p-12 border-black border-[2px] flex items-center justify-center">
               <img src={BookTwo} alt="joi-book" />
             </div>
             <div>
@@ -128,19 +134,19 @@ const Product = () => {
               </p>
               <div className="space-x-5">
                 <a href="/products/soul-dump">
-                  <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
+                  <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 md:p-3 p-2 px-7 text-black md:text-base text-[15px] border-black border-2 mt-8">
                     Learn More
                   </button>
                 </a>
                 <button
                   disabled
-                  className=" bg-transparent text-black rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8"
+                  className=" bg-transparent text-black rounded-[14px] border-0 md:p-3 p-2 px-7 text-black md:text-base text-[15px] border-black border-2 mt-8"
                 >
                   Coming Soon
                 </button>
               </div>
             </div>
-            <div className="bg-[#FFA0CA] rounded-[35px] p-12 border-black border-[4px] flex items-center justify-center">
+            <div className="bg-[#FFA0CA] rounded-[35px] p-12 border-black border-[2px] flex items-center justify-center">
               <img
                 src={BookThree}
                 alt="joi-book"
@@ -157,7 +163,7 @@ const Product = () => {
                 depth in your Juice It Out Ideas Journal.
               </p>
               <a href="/products/pocket-buddy">
-                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 p-3 px-7 text-black text-base border-black border-2 mt-8">
+                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-ipurple text-white rounded-[14px] border-0 md:p-3 p-2 px-7 text-black md:text-base text-[15px] border-black border-2 mt-8">
                   Learn More
                 </button>
               </a>

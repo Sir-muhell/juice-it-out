@@ -100,7 +100,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="justify-between md:flex text-xl font-medium mt-16 hidden">
+        <div className="justify-between md:flex text-xl font-medium mt-20 hidden">
           <a href="mailto:community@juiceitout.com">
             Email: community@juiceitout.com
           </a>

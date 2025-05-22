@@ -14,20 +14,20 @@ const Ideas = () => {
         <div className="relative md:p-10 p-5 lg:px-64 pt-5 lg:pt-20">
           <div className="z-20">
             <Header />
-            <div className="bg-[#FFCF57] md:grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative">
+            <div className="bg-[#FFCF57] md:grid grid-cols-2 h-[500px] mt-10 rounded-[25px] relative overflow-hidden">
               <div>
                 <img
                   src={HeroImage}
                   alt="Hero-text"
-                  className="md:w-[320px] w-[261px] md:pt-24 md:pl-20 md:m-0 m-auto pt-10"
+                  className="md:w-[320px] w-[231px] md:pt-24 md:pl-20 md:m-0 m-auto pt-10"
                 />
                 <p className="md:text-xl text-base md:text-left text-center font-medium md:pl-20 mt-5">
-                  From Scattered Thoughts <br />
+                  From Scattered Thoughts <br className="md:bock hidden" />
                   To Structured Brilliance.
                 </p>
               </div>
               <div className="flex items-center justify-center overflow-hidden">
-                <img src={BookTwo} alt="" className=" pr-10 pb-10" />
+                <img src={BookTwo} alt="" className=" md:pr-10 md:pb-10" />
               </div>
               <img
                 src={IconLemon}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="p-7 ">
+    <div className="md:p-7 p-5 ">
       <div className="bg-[#6456CA] px-5 sm:px-10 lg:px-20 py-5 lg:py-10 rounded-2xl border-black border-[2px]">
         <div className="lg:flex justify-between md:border-b border-white pb-10">
           <div>
@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 lg:flex md:flex justify-between text-white">
+        <div className="md:mt-10 lg:flex md:flex justify-between text-white">
           <p className=" lg:text-base text-[14px] font-bold text-center">
             2025 Juice It Out. All rights reserved
           </p>

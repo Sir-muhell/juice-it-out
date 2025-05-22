@@ -162,7 +162,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="p-5 sm:p-10 lg:p-64 lg:pt-20 space-y-32 lg:pb-20 overflow-hidden ">
+      <div className="p-5 sm:p-10 lg:p-64 lg:pt-20 md:space-y-32 space-y-20 lg:pb-20 overflow-hidden ">
         <div className="relative">
           <img
             src={IconLemon2}
@@ -334,13 +334,13 @@ const Home = () => {
                 <div
                   key={index}
                   style={{ backgroundColor: feature.color }}
-                  className={`p-7 rounded-xl border-black border-[2px] border ${colSpanClass}`}
+                  className={`md:p-7 p-5 rounded-xl border-black border-[2px] border ${colSpanClass}`}
                 >
                   {/* <img src={feature.image} className="w-8 h-8" /> */}
-                  <p className="mt-2 font-bold text-[21px] leading-6">
+                  <p className="mt-2 font-bold md:text-[21px] text-base leading-6">
                     {feature.head}
                   </p>
-                  <p className="font-medium text-xl text-black mt-2.5">
+                  <p className="font-medium md:text-xl text-xs leading-7 text-black mt-2.5">
                     {feature.text}
                   </p>
                 </div>
@@ -348,14 +348,14 @@ const Home = () => {
             })}
             <div
               style={{ backgroundColor: "#FFC5B8" }}
-              className="rounded-xl border-black border-[2px] w-full col-span-5 lg:grid grid-cols-5 overflow-hidden max-h-[255px]"
+              className="rounded-xl border-black border-[2px] w-full col-span-5 lg:grid grid-cols-5 overflow-hidden md:max-h-[255px]"
             >
               {/* Text content with padding */}
               <div className="col-span-3 p-7">
-                <p className="mt-2 font-bold text-[21px] leading-6">
+                <p className="mt-2 font-bold md:text-[21px] text-base leading-6">
                   A Companion Wherever You Go: Your Pocket Buddy
                 </p>
-                <p className="font-medium text-xl text-black mt-2.5">
+                <p className="font-medium md:text-xl text-xs leading-7 text-black mt-2.5">
                   Meet Your Pocket Buddy, a sleek, pocket-sized journal that
                   ensures your ideas are always within reach. Whether you’re on
                   the move or need quick clarity, this little companion is
@@ -372,7 +372,6 @@ const Home = () => {
                 />
               </div>
             </div>
-            ;
           </div>
           <img
             src={IconLemon}
